@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resive data</title>
+    <link rel="stylesheet" href="{% static 'resive_data/css/style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <form action="" id="product-form">
+          <div class="desing">
+            <div class="holder">
+              <div class="photo">
+                <label for="resive-photo"
+                  >عکس محصول مورد نظر خودرا وارد کنید:</label
+                >
+                <input type="file" name="resiver photo" id="resive-photo" />
+              </div>
+              <div class="title">
+                <label for="resive-title"
+                  >اسم محصول مورد نظر خودرا وارد کنید:</label
+                >
+                <input type="text" name="resiver title" id="resive-title" />
+              </div>
+              <div class="code">
+                <label for="resive-code"
+                  >کد محصول مورد نظر خودرا وارد کنید:</label
+                >
+                <input type="number" name="resiver code" id="resive-code" />
+              </div>
+              <input type="submit" value="تایید" />
+            </div>
+          </div>
+        </form>
+        <form action="" id="product-form--remove">
+          <div class="desing">
+            <div class="holder">
+              <div class="code">
+                <label for="resive-code2">کد محصول مورد نظر را برای حذف وارد کنید:</label>
+                <input type="number" name="remover item" id="resive-code2">
+              </div>
+              <input type="submit" value="تایید">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="{% static 'resive_data/js/app.js' %}"></script>
+</body>
+</html>

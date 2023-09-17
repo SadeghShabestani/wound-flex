@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../font/Vazir-Medium.ttf);
+}
+*{
+    font-family: "vazir";
+}
+.container{
+    margin: 0px auto;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 440px;
+}
+.desing{
+    padding: 100px 50px;
+    margin: 0px auto;
+    border-radius: 10px;
+    max-width: 400px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    justify-content: space-between;
+}
+#resive-photo{
+    color: #fff;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    justify-content: space-between;
+}
+.code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    justify-content: space-between;
+}
+input{
+    padding: 5px 20px;
+    outline: none;
+}
+label{
+    color: #fff;
+}
+/*_________________responsive______________*/
+@media only screen and ( max-width:1200px){
+    .container{
+        max-width: 960px;
+    }  
+}
+@media only screen and ( max-width:992px){
+    .container{
+        max-width: 960px;
+      } 
+}
+@media only screen and ( max-width:768px){
+    .container{
+        max-width: 540px;
+      }   
+}
+@media only screen and ( max-width:576px){
+    .container{
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+      }
+    label{
+        font-size: 12px;
+    }
+    input{
+        padding: 0px 5px;
+    }
+    #resive-photo{
+        font-size: 10px;
+    }
+}
